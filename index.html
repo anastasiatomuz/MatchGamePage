@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Match Game</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" async></script>
+
+</head>
+
+<body onload="randomize();">
+  <div class="header">
+    <h1>MATCH GAME</h1>
+  </div>
+  <div id="instructions">Each of the gray boxes below is a flipped-down 
+    card. To flip it over, simply click on it. Your job is to flip over two cards
+  at a time such that the pair have the same color. To win the game, you must flip
+over all 8 pairs. The lower your score, the better you did. Good luck!</div>
+
+
+  <p id="scorelabel">Score: <span id="score">0</span></p>
+
+
+  <div class="grid">
+    <img id="card00" src="blank.jpg">
+    <img id="card01" src="blank.jpg">
+    <img id="card02" src="blank.jpg">
+    <img id="card03" src="blank.jpg">
+    <img id="card10" src="blank.jpg">
+    <img id="card11" src="blank.jpg">
+    <img id="card12" src="blank.jpg">
+    <img id="card13" src="blank.jpg">
+    <img id="card20" src="blank.jpg">
+    <img id="card21" src="blank.jpg">
+    <img id="card22" src="blank.jpg">
+    <img id="card23" src="blank.jpg">
+    <img id="card30" src="blank.jpg">
+    <img id="card31" src="blank.jpg">
+    <img id="card32" src="blank.jpg">
+    <img id="card33" src="blank.jpg">
+  </div>
+
+  <div id="center-reset">
+  <button id="reset" onclick="resetGame()">Reset</button>
+  </div>
+</div>
+</body>
+
+</html>
